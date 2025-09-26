@@ -1,0 +1,37 @@
+[
+    {
+        "profession": "Программист Python",
+        "workplace": "Москва",
+        "salary": 150000
+    },
+    {
+        "profession": "программист Java",
+        "workplace": "Санкт-Петербург",
+        "salary": 140000
+    },
+    {
+        "profession": "Аналитик данных",
+        "workplace": "Казань",
+        "salary": 120000
+    },
+    {
+        "profession": "Программист C++",
+        "workplace": "Новосибирск",
+        "salary": 130000
+    },
+    {
+        "profession": "Дизайнер",
+        "workplace": "Екатеринбург",
+        "salary": 90000
+    },
+    {
+        "profession": "Программист Python",
+        "workplace": "Москва", 
+        "salary": 160000
+    },
+    {
+        "profession": "программист JavaScript",
+        "workplace": "Краснодар",
+        "salary": 110000
+    }
+]
