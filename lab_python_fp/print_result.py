@@ -42,9 +42,8 @@ def test_4():
     return [1, 2]
 
 
-if __name__ == '__main__':
-    print('!!!!!!!!')
-    test_1()
-    test_2()
-    test_3()
-    test_4()
+print('!!!!!!!!')
+test_1()
+test_2()
+test_3()
+test_4()

@@ -49,36 +49,34 @@ class Unique(object):
 
 
 # Тестовые примеры
-if __name__ == "__main__":
-    print("Тест 1 - числа с дубликатами:")
-    data1 = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3]
-    for item in Unique(data1):
-        print(item, end=" ")
-    print()
+print("Тест 1 - числа с дубликатами:")
+data1 = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3]
+for item in Unique(data1):
+    print(item, end=" ")
+print()
 
-    print("\nТест 2 - с генератором gen_random:")
-    # Сначала нужно импортировать gen_random или создать простой генератор
-    def simple_gen():
-        for i in [1, 2, 2, 3, 3, 3, 1, 4, 4]:
-            yield i
+print("\nТест 2 - с генератором gen_random:")
+def simple_gen():
+    for i in [1, 2, 2, 3, 3, 3, 1, 4, 4]:
+        yield i
 
-    for item in Unique(simple_gen()):
-        print(item, end=" ")
-    print()
+for item in Unique(simple_gen()):
+    print(item, end=" ")
+print()
 
-    print("\nТест 3 - строки без ignore_case (по умолчанию):")
-    data3 = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
-    for item in Unique(data3):
-        print(item, end=" ")
-    print()
+print("\nТест 3 - строки без ignore_case (по умолчанию):")
+data3 = ['a', 'A', 'b', 'B', 'a', 'A', 'b', 'B']
+for item in Unique(data3):
+    print(item, end=" ")
+print()
 
-    print("\nТест 4 - строки с ignore_case=True:")
-    for item in Unique(data3, ignore_case=True):
-        print(item, end=" ")
-    print()
+print("\nТест 4 - строки с ignore_case=True:")
+for item in Unique(data3, ignore_case=True):
+    print(item, end=" ")
+print()
 
-    print("\nТест 5 - смешанные данные:")
-    data5 = [1, '1', 1, '1', 'a', 'A', 2.5, 2.5]
-    for item in Unique(data5):
-        print(item, end=" ")
-    print()
+print("\nТест 5 - смешанные данные:")
+data5 = [1, '1', 1, '1', 'a', 'A', 2.5, 2.5]
+for item in Unique(data5):
+    print(item, end=" ")
+print()

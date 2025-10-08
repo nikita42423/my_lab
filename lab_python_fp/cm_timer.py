@@ -26,18 +26,17 @@ def cm_timer_2():
 
 
 # Тестовые примеры
-if __name__ == '__main__':
-    print("Тест cm_timer_1 (на основе класса):")
-    with cm_timer_1():
-        time.sleep(2.5)
+print("Тест cm_timer_1 (на основе класса):")
+with cm_timer_1():
+    time.sleep(2.5)
 
-    print("\nТест cm_timer_2 (с contextlib):")
+print("\nТест cm_timer_2 (с contextlib):")
+with cm_timer_2():
+    time.sleep(1.5)
+
+print("\nТест с вложенными блоками:")
+with cm_timer_1():
+    time.sleep(0.5)
     with cm_timer_2():
-        time.sleep(1.5)
-
-    print("\nТест с вложенными блоками:")
-    with cm_timer_1():
-        time.sleep(0.5)
-        with cm_timer_2():
-            time.sleep(0.3)
-        time.sleep(0.2)
+        time.sleep(0.3)
+    time.sleep(0.2)
